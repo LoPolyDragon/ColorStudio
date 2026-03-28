@@ -49,6 +49,7 @@ struct ContentView: View {
             }
         }
         .navigationSplitViewStyle(.balanced)
+        .frame(minWidth: 600, minHeight: 500)
         .onAppear {
             selectedCollection = collectionViewModel.collections.first
             selectedPalette = paletteViewModel.palettes.first
